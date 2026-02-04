@@ -70,3 +70,20 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+const GryffindorHouse = (hogwarts) => {
+  hogwarts.forEach(
+    ({ firstName, lastName, house }) =>
+      house === "Gryffindor" && console.log(`${firstName} ${lastName}`)
+  );
+};
+
+const teacherHasPet = (hogwarts) => {
+  hogwarts.forEach(
+    ({ firstName, lastName, pet, occupation }) =>
+      occupation === "Teacher" && pet && console.log(`${firstName} ${lastName}`)
+  );
+};
+
+// GryffindorHouse(hogwarts);
+teacherHasPet(hogwarts);
