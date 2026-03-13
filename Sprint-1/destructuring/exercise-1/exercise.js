@@ -16,4 +16,4 @@ function introduceYourself({
   );
 }
 
-introduceYourself();
+introduceYourself(personOne);

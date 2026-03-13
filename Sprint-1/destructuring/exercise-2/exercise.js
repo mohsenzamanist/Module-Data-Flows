@@ -71,7 +71,7 @@ let hogwarts = [
   },
 ];
 
-const GryffindorHouse = (hogwarts) => {
+const GryffindorHousePeople = (hogwarts) => {
   hogwarts.forEach(
     ({ firstName, lastName, house }) =>
       house === "Gryffindor" && console.log(`${firstName} ${lastName}`)
@@ -85,5 +85,11 @@ const teacherHasPet = (hogwarts) => {
   );
 };
 
-// GryffindorHouse(hogwarts);
+console.log("*****************************");
+console.log("***Gryffindor House People***");
+console.log("*****************************");
+GryffindorHouse(hogwarts);
+console.log("\n\n*****************************");
+console.log("*********teacherHasPet***********");
+console.log("*****************************");
 teacherHasPet(hogwarts);
